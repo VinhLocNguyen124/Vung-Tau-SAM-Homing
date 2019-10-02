@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="end"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imgHinhnhatroBTS"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hoian" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTennhatroBTS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:text="Nhà trọ Thanh Bình"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDanhgiaBTS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTennhatroBTS"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:gravity="center"
+                    android:text="Độ hài lòng:"
+                    android:textColor="@color/coCam"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rtbarNhatroBTS"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTennhatroBTS"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/tvDanhgiaBTS"
+                    android:rating="3.5" />
+
+                <TextView
+                    android:id="@+id/tvDiachinhatroBTS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDanhgiaBTS"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:text="140 Lê Hồng Phong, Phường 8, Thành phố Vũng Tàu "
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvSophongtrongBTS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDiachinhatroBTS"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:text="còn 2 phòng trống"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTrangthaighepBTS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSophongtrongBTS"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:text="có phòng ghép"
+                    android:textColor="@color/coCam"
+
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <android.support.v7.widget.CardView
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:id="@+id/btnXemthemBTS"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:layout_below="@+id/tvTrangthaighepBTS"
+                    android:elevation="5dp"
+                    android:layout_margin="@dimen/size10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/btnXemthemCTKT"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:background="#00FFFF00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:justificationMode="inter_word"
+                        android:paddingLeft="@dimen/size10dp"
+                        android:paddingRight="@dimen/size10dp"
+                        android:textAllCaps="false"
+                        android:text="Tìm hiểu thêm ..."
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/tvIdkhutroBTS"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

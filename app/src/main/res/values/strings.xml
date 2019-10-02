@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DeTaiAndroid</string>
+    <string name="item_nav_menu_trangchu">Trang chủ</string>
+    <string name="item_nav_menu_danhmuc">Danh mục</string>
+    <string name="item_nav_menu_bando">Bản đồ</string>
+    <string name="item_nav_menu_boloc">Bộ lọc</string>
+    <string name="item_nav_menu_thuengoai">Thuê ngoài</string>
+    <string name="item_nav_menu_sapxep">Sắp xếp</string>
+    <string name="act_dangki_titledangki">Đăng kí</string>
+    <string name="act_dangki_hovatennguoidung">Họ và tên người dùng</string>
+    <string name="act_dangki_mail">mail@example.com</string>
+    <string name="act_dangki_sdtnguoidung">Số điện thoại người dùng</string>
+    <string name="act_dangki_tentaikhoan">Tên tài khoản dùng để đăng nhập</string>
+    <string name="act_dangki_matkhau">Mật khẩu dùng để đăng nhập</string>
+    <string name="act_dangki_hienmatkhau">Hiện mật khẩu</string>
+    <string name="act_dangnhap_titledangnhap">Đăng nhập</string>
+    <string name="act_dangnhap_tendangnhap">Tên đăng nhập</string>
+    <string name="act_dangnhap_banchuacotaikhoan">bạn chưa có tài khoản?  </string>
+    <string name="act_dangnhap_dangkingay">đăng ký ngay </string>
+    <string name="motaHoiAn">Một thành phố thơ mộng và đầy hoài cổ bên cạnh dòng sông thơ mộng Một thành phố thơ mộng và đầy hoài cổ bên cạnh dòng sông thơ mộng</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="item_nav_menu_khutro">Khu trọ</string>
+</resources>

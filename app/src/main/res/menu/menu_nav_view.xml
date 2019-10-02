@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trangchu"
+            android:icon="@drawable/icon_home"
+            android:title="@string/item_nav_menu_trangchu"
+           />
+
+        <item
+            android:id="@+id/nav_bando"
+            android:icon="@drawable/icon_map"
+            android:title="@string/item_nav_menu_bando"
+           />
+
+    </group>
+
+    <item
+        android:id="@+id/caidatchung"
+        android:title="Cài đặt chung">
+        <menu>
+            <item
+                android:id="@+id/caidattaikhoan"
+                android:title="Cài đặt tài khoản"
+                android:icon="@drawable/icon_accountsetting"
+               />
+        </menu>
+    </item>
+
+</menu>

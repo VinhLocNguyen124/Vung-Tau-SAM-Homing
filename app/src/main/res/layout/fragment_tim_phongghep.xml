@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B4EEEEE8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvGiaPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm theo giá"
+                android:textSize="20sp"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size20dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:padding="@dimen/size10dp" />
+            <Spinner
+                android:background="@drawable/rounded_edt_tieuchi"
+                android:layout_below="@id/tvGiaPG"
+                android:id="@+id/spnTimtheogia"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/tvPhuongPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm theo phường"
+                android:textSize="20sp"
+                android:layout_below="@+id/spnTimtheogia"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:padding="@dimen/size10dp" />
+            <Spinner
+                android:background="@drawable/rounded_edt_tieuchi"
+                android:layout_below="@id/tvPhuongPG"
+                android:id="@+id/spnTimtheophuong"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/tvThanhPhoPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm theo thành phố"
+                android:textSize="20sp"
+                android:layout_below="@+id/spnTimtheophuong"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:padding="@dimen/size10dp" />
+            <Spinner
+                android:background="@drawable/rounded_edt_tieuchi"
+                android:layout_below="@id/tvThanhPhoPG"
+                android:id="@+id/spnTimtheothanhpho"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+            </Spinner>
+
+
+
+            <LinearLayout
+                android:id="@+id/lnGacPG"
+                android:layout_marginTop="@dimen/size20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50dp"
+                android:layout_below="@+id/spnTimtheothanhpho"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:background="@drawable/rounded_edt_tieuchi">
+
+                <RadioGroup
+                    android:id="@+id/rgGacPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rdbCogacPG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size20dp"
+                        android:layout_weight="1"
+                        android:text="Có gác" />
+
+                    <RadioButton
+                        android:id="@+id/rdbKhonggacPG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size20dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Không gác" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50dp"
+                android:layout_below="@+id/lnGacPG"
+                android:layout_marginLeft="@dimen/size30dp"
+                android:layout_marginTop="@dimen/size20dp"
+                android:layout_marginRight="@dimen/size30dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:background="@drawable/rounded_btn_search_actphongghep"
+                android:text="Tìm phòng cho bạn"
+                android:textAllCaps="false"
+                android:textColor="@color/cowhite"
+                android:textSize="@dimen/size20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

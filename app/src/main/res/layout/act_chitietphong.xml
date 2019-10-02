@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4E4C8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size10dp"
+            android:background="#FFFFFF">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerImageGalleryViewCTP"
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvTenKhuTroCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerImageGalleryViewCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Tên khu trọ"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDecorCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTenKhuTroCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="5dp"
+                android:text="Chất lượng như vàng trên toàn đất việt"
+                android:drawableLeft="@drawable/icon_global"
+                android:textColor="@color/coCam"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvMotaCTP"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDecorCTP"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:drawablePadding="@dimen/size10dp"
+                android:justificationMode="inter_word"
+                android:paddingLeft="@dimen/size10dp"
+                android:paddingRight="@dimen/size10dp"
+                android:text="Môtảssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+                android:textSize="18sp" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="@dimen/size10dp"
+                android:layout_below="@+id/tvMotaCTP"
+                android:elevation="3dp"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvXemthemCTP"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="@dimen/size10dp"
+                    android:paddingRight="@dimen/size10dp"
+                    android:text="Xem thêm mô tả"
+                    android:textSize="18sp" />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_below="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+
+            <FrameLayout
+                android:id="@+id/mapFragment_containerCTP"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size200dp"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size30dp"
+                android:layout_marginRight="@dimen/size10dp" />
+
+
+            <TextView
+                android:id="@+id/tvDiachiKhuTroCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapFragment_containerCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:drawableLeft="@drawable/icon_marker"
+                android:drawablePadding="5dp"
+                android:padding="7dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:text="Địa chỉ khu trọ"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tvTitleMotaCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size20dp"
+                android:drawableLeft="@drawable/icon_description"
+                android:drawablePadding="@dimen/size10dp"
+                android:paddingLeft="@dimen/size10dp"
+                android:textColor="@color/black"
+                android:text="Mô tả chi tiết phòng trọ"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvGiaptCTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleMotaCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size20dp"
+                android:paddingLeft="@dimen/size10dp"
+                android:textColor="@color/black"
+                android:paddingRight="@dimen/size10dp"
+                android:text="Giapt"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvDientichptCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvGiaptCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size10dp"
+                android:paddingLeft="@dimen/size10dp"
+                android:text="Dientichpt"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvGiaptCTP"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/tvDientichptCTP"
+                android:text="2"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvTrangthaigacCTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDientichptCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:paddingLeft="@dimen/size10dp"
+                android:paddingRight="@dimen/size10dp"
+                android:text="Trangthaigac"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTrangthaigacCTP"
+                android:paddingLeft="@dimen/size10dp"
+                android:paddingRight="@dimen/size10dp"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tvThongtinchutroCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size20dp"
+                android:drawableLeft="@drawable/icon_personalinfo"
+                android:drawablePadding="@dimen/size10dp"
+                android:paddingLeft="@dimen/size10dp"
+                android:textColor="@color/black"
+                android:text="Thông tin chủ trọ"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvTenchutroCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvThongtinchutroCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:drawableLeft="@drawable/icon_nametag"
+                android:drawablePadding="@dimen/size10dp"
+                android:padding="@dimen/size10dp"
+                android:text="Họ và tên"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvEmailchutroCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTenchutroCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:drawableLeft="@drawable/icon_email"
+                android:drawablePadding="@dimen/size10dp"
+                android:padding="@dimen/size10dp"
+                android:text="Email chủ trọ"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvSdtchutroCTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmailchutroCTP"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/size10dp"
+                android:padding="@dimen/size10dp"
+                android:text="Số điện thoại chủ trọ"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

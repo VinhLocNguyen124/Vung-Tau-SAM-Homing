@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/gradient_layout_phongghep_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/imgBackground">
+
+        <ImageView
+            android:id="@+id/imgAnhdaidien"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvTenphongtro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgAnhdaidien"
+            android:text="Minh Anh"
+            android:textColor="@color/cowhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDientichphongtro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenphongtro"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgAnhdaidien"
+            android:text="25m"
+            android:textColor="@color/cowhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@+id/tvDientichphongtro"
+            android:text="2"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/cowhite"/>
+
+        <TextView
+            android:id="@+id/tvDiachiphongtro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDientichphongtro"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgAnhdaidien"
+            android:text="229 Le Hong Phong Street, Vung Tau city 229 Le Hong Phong Street, Vung Tau city"
+            android:textColor="@color/cowhite"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

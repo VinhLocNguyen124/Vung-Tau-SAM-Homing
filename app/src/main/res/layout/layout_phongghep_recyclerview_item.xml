@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/size10dp"
+    android:background="#00EEEEE8"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:cardCornerRadius="@dimen/size10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imgHinhLVP"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hoian" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size10dp">
+
+                <TextView
+                    android:id="@+id/tvDientichLVP"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25m" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvDientichLVP"
+                    android:text="2"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/tvTrangthaighepLVP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/tvDientichLVP"
+                    android:text="Đang ghép" />
+                <TextView
+                    android:id="@+id/tvSonguoihientaiLVP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/tvTrangthaighepLVP"
+                    android:text="0 người" />
+                <TextView
+                    android:id="@+id/tvPhongtrongLVP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/tvSonguoihientaiLVP"
+                    android:text="Còn trống" />
+                <TextView
+                    android:id="@+id/tvGiaLVP"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/tvPhongtrongLVP"
+                    android:text="15000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

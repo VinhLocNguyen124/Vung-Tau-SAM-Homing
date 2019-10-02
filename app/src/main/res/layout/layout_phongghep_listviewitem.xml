@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/size10dp"
+    android:background="#EEEEE8"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:cardCornerRadius="@dimen/size10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imgHinhLVPG"
+                android:layout_width="@dimen/size100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hoian" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_marginBottom="@dimen/size10dp">
+
+                <TextView
+                    android:id="@+id/tvTennhatroLVPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nhà trọ Thanh Bình"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDientichLVPG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTennhatroLVPG"
+                    android:text="25m" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTennhatroLVPG"
+                    android:layout_toRightOf="@+id/tvDientichLVPG"
+                    android:text="2"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/tvGiaLVPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDientichLVPG"
+                    android:text="15000000" />
+
+                <TextView
+                    android:id="@+id/tvDiachiLVPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvGiaLVPG"
+                    android:text="140 Lê Hồng Phong, Phường 8, Thành phố Vũng Tàu " />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

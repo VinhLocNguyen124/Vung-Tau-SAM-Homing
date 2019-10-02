@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:background="#00FFFF00">
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="@dimen/size20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/icon_narrow_down"/>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_marker">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:id="@+id/tvTenkhutroMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Nhà trọ Thanh Bình"
+            android:textColor="#ffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cowhite"
+    tools:context=".screen.DanhGiaActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gln0.75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvtitleTren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Bạn có hài lòng về"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:paddingRight="@dimen/size20dp"
+        android:paddingLeft="@dimen/size20dp"
+        android:background="@drawable/nenxanh"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gln0.03" />
+
+    <TextView
+        android:id="@+id/tvtitleDuoi"
+        android:paddingRight="@dimen/size20dp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="@dimen/size20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:text="Nhà trọ của chúng tôi"
+        android:background="@drawable/vienxanh"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitleTren" />
+
+    <RelativeLayout
+        android:id="@+id/rltCHL"
+        app:layout_constraintTop_toBottomOf="@+id/gln0.3"
+        app:layout_constraintBottom_toTopOf="@id/gln0.4"
+        android:layout_marginRight="@dimen/size30dp"
+        android:layout_marginLeft="@dimen/size30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/ic_sad"
+            android:layout_width="@dimen/size40dp"
+            android:layout_height="@dimen/size40dp"
+            android:src="@drawable/icon_sad"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textColor="@color/cowhite"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa hài lòng"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_sad"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rltHL"
+        app:layout_constraintTop_toBottomOf="@+id/gln0.4"
+        app:layout_constraintBottom_toTopOf="@id/gln0.5"
+        android:layout_marginRight="@dimen/size30dp"
+        android:layout_marginLeft="@dimen/size30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/ic_normal"
+            android:layout_width="@dimen/size40dp"
+            android:layout_height="@dimen/size40dp"
+            android:src="@drawable/icon_normal"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textColor="@color/cowhite"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hài lòng"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_normal"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rltHHL"
+        app:layout_constraintTop_toBottomOf="@+id/gln0.5"
+        app:layout_constraintBottom_toTopOf="@id/gln0.6"
+        android:layout_marginRight="@dimen/size30dp"
+        android:layout_marginLeft="@dimen/size30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/ic_smile"
+            android:layout_width="@dimen/size40dp"
+            android:layout_height="@dimen/size40dp"
+            android:src="@drawable/icon_smile"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textColor="@color/cowhite"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hơi hài lòng"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_smile"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rltRHL"
+        app:layout_constraintTop_toBottomOf="@+id/gln0.6"
+        app:layout_constraintBottom_toTopOf="@id/gln0.7"
+        android:layout_marginRight="@dimen/size30dp"
+        android:layout_marginLeft="@dimen/size30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/ic_lovely"
+            android:layout_width="@dimen/size40dp"
+            android:layout_height="@dimen/size40dp"
+            android:src="@drawable/icon_lovely"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textColor="@color/cowhite"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rất hài lòng"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_lovely"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rltKHL"
+        app:layout_constraintTop_toBottomOf="@+id/gln0.2"
+        app:layout_constraintBottom_toTopOf="@id/gln0.3"
+        android:layout_marginRight="@dimen/size30dp"
+        android:layout_marginLeft="@dimen/size30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/ic_angry"
+            android:layout_width="@dimen/size40dp"
+            android:layout_height="@dimen/size40dp"
+            android:src="@drawable/icon_angry"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textColor="@color/cowhite"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không hài lòng"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_angry"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/gln0.75"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <Button
+            android:id="@+id/btnDanhgia"
+            android:textColor="@color/cowhite"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá"
+            android:background="@drawable/rounded_btn_signup"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/size30dp"
+            android:paddingLeft="@dimen/size20dp"
+            android:paddingRight="@dimen/size20dp"
+            />
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:background="@drawable/rounded_btn_signin"
+            android:textSize="20sp"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="@dimen/size30dp"
+            android:paddingLeft="@dimen/size20dp"
+            android:paddingRight="@dimen/size20dp"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
